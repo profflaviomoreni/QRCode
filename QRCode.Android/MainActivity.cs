@@ -12,6 +12,7 @@ namespace QRCode.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            ZXing.Mobile.MobileBarcodeScanner.Initialize(Application);
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
